@@ -191,10 +191,7 @@ var Bricklayer;
     Bricklayer.Container = Container;
 })(Bricklayer || (Bricklayer = {}));
 (function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        define(function () { return factory(); });
-    }
-    else if (typeof window !== "undefined" && root === window) {
+    if (typeof window !== "undefined" && root === window) {
         root.Bricklayer = factory();
     }
     else if (typeof module === 'object' && module.exports) {
